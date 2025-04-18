@@ -47,7 +47,7 @@ import com.example.langunchertv.tv.isDefaultLauncher
 fun MobileLauncherScreen() {
     val context = LocalContext.current
     var isAutoLaunchEnabled by remember { mutableStateOf(false) }
-    val apps = remember { getAllLaunchableInstalledApps(context) }
+    val apps = remember { getAllLaunchableInstalledApps(context, emptyList()) }
     val lifecycleOwner = LocalLifecycleOwner.current
 
     LaunchedEffect(Unit) {

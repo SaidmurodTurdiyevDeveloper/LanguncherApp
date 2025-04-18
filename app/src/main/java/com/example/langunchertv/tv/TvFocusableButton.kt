@@ -19,7 +19,7 @@ import androidx.tv.material3.Text
 
 @OptIn(ExperimentalTvMaterial3Api::class)
 @Composable
- fun TvFocusableButton(
+fun TvFocusableButton(
     modifier: Modifier = Modifier.Companion,
     onClick: () -> Unit,
     text: String,
@@ -42,14 +42,13 @@ import androidx.tv.material3.Text
     ) {
         Text(
             modifier = Modifier.Companion
-                .fillMaxWidth()
                 .padding(vertical = 8.dp),
             text = text,
             textAlign = TextAlign.Companion.Center,
             maxLines = 1,
             style = TextStyle(
-                fontSize = 20.sp,
-                lineHeight = 32.sp,
+                fontSize = 16.sp,
+                lineHeight = 20.sp,
                 fontWeight = FontWeight.Companion.W500
             )
         )

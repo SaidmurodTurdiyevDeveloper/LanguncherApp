@@ -53,4 +53,8 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
 
     implementation(libs.coil.compose)
+
+    //Gson
+    implementation(libs.converter.gson)
+    implementation(libs.gson)
 }
